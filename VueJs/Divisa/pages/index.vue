@@ -1,16 +1,8 @@
 <template>
-    <v-app>
-    <v-app-bar title="Application"></v-app-bar>
+  <div>
+    <h1>index</h1>
+  </div>
+</template>
 
-    <v-navigation-drawer>...</v-navigation-drawer>
-        
-    <v-main>...</v-main>
-  </v-app>
-  </template>
-  
-  <script>
-  export default {
-    name: 'IndexWeb',
-    layout: 'webPage',
-  }
-  </script>
+<script>
+</script>
