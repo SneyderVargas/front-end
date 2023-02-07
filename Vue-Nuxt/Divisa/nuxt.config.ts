@@ -1,9 +1,16 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+    app: {
+        head: {
+            titleTemplate: '%s - divisas',
+            title: 'divisas',
+        }
+    },
     // ... other options
     modules: [
         // ...
         '@pinia/nuxt',
+        'nuxt-icon',
     ],
     css: ['vuetify/styles'],
     build: {
