@@ -14,8 +14,10 @@ const drawerComputada = computed({
 </script>
 <template>
   <div>
-    <v-navigation-drawer v-model="drawerComputada" fixed app>
+    <v-navigation-drawer v-model="drawerComputada" permanent absolute>
       <!--  -->
+      <AvatarDrawer/>
+      <ListItemDrawer />
     </v-navigation-drawer>
     <v-app-bar>
       <v-app-bar-nav-icon @click="drawerComputada = !drawerComputada">
