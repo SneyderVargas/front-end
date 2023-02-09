@@ -5,10 +5,11 @@ const mainStore = useMainStore();
 const setMenssage = (value: string) => {
   mainStore.setMenssage(value)
 }
+const user = useState('user', () => true)
 
 
 const config = useRuntimeConfig();
-console.log(config);
+//console.log(config);
 </script>
 <template>
   <div>

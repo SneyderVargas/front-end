@@ -6,5 +6,6 @@
         <slot />
       </main>
     </v-main>
+    <ProgresCircule/>
   </v-app>
 </template>

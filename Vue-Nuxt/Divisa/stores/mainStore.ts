@@ -3,7 +3,8 @@ import { defineStore } from "pinia";
 export const useMainStore = defineStore('main', {
     state: () => ({
         menssage: 'Mensaje Store',
-        drawer: true
+        drawer: true,
+        progresCircule:  false
     }),
     actions: {
         setMenssage(newMessage: string) {
@@ -11,6 +12,9 @@ export const useMainStore = defineStore('main', {
         },
         setDrawer(newDrawer: boolean){
             this.drawer = newDrawer
+        },
+        setProgresCircule(newProgresCircule: boolean){
+            this.progresCircule = newProgresCircule
         }
     },
     getters: {
@@ -19,6 +23,9 @@ export const useMainStore = defineStore('main', {
         },
         getDrawer (): boolean {
             return this.drawer
+        },
+        getProgresCircule (): boolean{
+            return this.progresCircule
         }
     }
 })
